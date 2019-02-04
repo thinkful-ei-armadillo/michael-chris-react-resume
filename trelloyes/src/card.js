@@ -1,11 +1,11 @@
 import React from 'react';
 import List from '/List.js';
 
-function Card (title, content){
+function Card (props){
     return (
-        <div>
-            <h3>{title}</h3>
-            <p>{content}</p>
+        <div className="card">
+            <h3>{props.title}</h3>
+            <p>{props.content}</p>
         </div>
 
     );
