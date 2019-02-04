@@ -1,7 +1,6 @@
 import React from 'react';
-import Card from './Card'
+import Card from './card.js'
 import App from './App.js';
-import STORE from './Store.js';
 import './List.css';
 
 
@@ -9,7 +8,7 @@ function List (props){
     
     return (
         <section className="List">
-          <header>
+          <header className="List-header">
             <h2>{props.header}</h2>
           </header>
           <div className="List-cards">
