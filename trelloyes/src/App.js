@@ -1,5 +1,7 @@
 import React  from 'react';
-import List from '/List.js';
+import List from '/List';
+import Store from '/store'
+import './App.css';
 
 
 function App (props){

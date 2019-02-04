@@ -1,25 +1,20 @@
 import React from 'react';
+import Card from './Card'
 import App from './App.js';
 import STORE from './Store.js';
+import './List.css';
 
 
-function List (header, cards){
-    const cardList = STORE.lists.map(cards => 
-        <Card key={cards.id}  header={cards.header} cardId={cards.cardIds} />
-        );
+function List (props){
+    
     return (
-        <React.Fragment>
-          <section className="List">
-             <header className="List-header">
-                <h2>{header}</h2>
-             </header>
-             <div class="List-cards">
-                {cardList}
-             </div>
-          </section>  
-            
-            
-        </React.Fragment>
+        <section className="List">
+          <header>
+            <h2>{props.header}</h2>
+          </header>
+          <div className="List-cards">
+          </div>
+        </section>
     )
 }
 
