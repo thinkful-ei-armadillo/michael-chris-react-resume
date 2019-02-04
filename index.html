@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sally Student | About me</title> 
+</head>
+<body>
+    <div id="application-root"></div>
+
+    <script
+      src="react.development.js"
+      >
+    </script>
+    <script
+      src="react-dom.development.js"
+      >
+    </script>
+      <script
+      src="https://unpkg.com/babel-standalone@6/babel.min.js"
+      crossorigin>
+    </script>
+    <script type="text/babel">
+      function App(){
+
+         return (
+             <div>
+                <section>
+                    <h2>Contact Info</h2>
+                    <address>
+                        Name: Sally Student<br/>
+                        E-mail: sallystudent@thinkful<br/>
+                        Address: 123 Main St.<br/>
+                        Phone Number: (512)-343-2221<br/>
+                        <img src="https://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg" alt="" /> 
+                    </address>
+                </section>
+
+                <header> 
+                    <h1>About me</h1> 
+                </header>
+
+                <main> 
+                    <h2>My work</h2> 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
+                </main>
+                <div>
+                    Education: Harvard University 
+                </div>
+                <div>
+                    Employment History
+                    <ul>
+                        <li>Walmart greeter 12/03/1996 - 11/07/1998 Greeted people</li>
+                        <li>Thinkful TA 05/11/1999 - current Helped people code</li>
+                    </ul>
+                </div>   
+         </div>)}
+         ReactDOM.render(<App></App>, document.querySelector('#application-root'));
+        </script>   
+    </body>
+</html>
